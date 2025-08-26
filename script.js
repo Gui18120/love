@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const segundosRestantes = Math.floor(((msRestantesDoDia % (1000 * 60 * 60)) % (1000 * 60)) / 1000);
 
         displayAnos.textContent = String(anosCompletos).padStart(2, '0');
-        if (anosCompletos == 1) {
+        if (anosCompletos == 0) {
             labelAnos.textContent = "ano"
         } else {
             labelAnos.textContent = "anos"
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         displayMeses.textContent = String(mesesCompletos).padStart(2, '0');
-        if (mesesCompletos == 1) {
+        if (mesesCompletos == 0) {
             labelMeses.textContent = "mês";
         } else {
             labelMeses.textContent = "meses";
