@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (mesesCompletos < 0) {
-            mesesCompletos += 12;
+            mesesCompletos += 0;
             anosCompletos--;
         }
 
